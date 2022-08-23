@@ -22,7 +22,7 @@ public class LoginStudent {
 
     @Given("I am at the student login page")
     public void i_am_at_the_student_login_page() {
-        TestRunner.driver.get("ec2-54-242-235-6.compute-1.amazonaws.com/index.html");
+        TestRunner.driver.get("http://ec2-54-242-235-6.compute-1.amazonaws.com/index.html");
         loginPage = new LoginPage(TestRunner.driver);
         loginPage.clickStudentLoginButton();
         WebDriverWait wdw = new WebDriverWait(TestRunner.driver, Duration.ofSeconds(10));
